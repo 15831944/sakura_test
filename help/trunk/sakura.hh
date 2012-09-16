@@ -409,6 +409,7 @@
 #define HIDC_CHECK_NoFilterSaveNew				10345 //新規から保存時は全ファイル表示	// 2006.11.16 ryoji
 #define HIDC_CHECK_NoFilterSaveFile				10346 //新規以外から保存時は全ファイル表示	// 2006.11.16 ryoji
 #define HIDC_CHECK_ALERT_IF_LARGEFILE			10347 //開こうとしたファイルが大きい場合に警告する
+#define HIDC_COMBO_FILESHAREMODE				10348 //排他制御
 #define HIDC_EDIT_DFORM							10440 //日付書式
 #define HIDC_EDIT_TFORM							10441 //時刻書式
 #define HIDC_EDIT_DFORM_EX						10442 //日付書式（表示例）
@@ -731,13 +732,13 @@
 #define HIDC_CMP_LIST_FILES		12306	//ファイル一覧
 #define HIDC_CMP_STATIC_COMPARESRC	12307	//ソースファイル
 
-//印刷
-#define HIDOK_PP			12400	//OK
-#define HIDCANCEL_PP		12401	//キャンセル
-#define HIDC_PP_EDIT_FROM	12402	//ページから
-#define HIDC_PP_EDIT_TO		12403	//ページまで
-#define HIDC_PP_RADIO_ALL	12404	//すべて
-#define HIDC_PP_RADIO_FROMTO	12405	//指定
+//印刷	del Uchi 2010/4/26
+//#define HIDOK_PP			12400	//OK
+//#define HIDCANCEL_PP		12401	//キャンセル
+//#define HIDC_PP_EDIT_FROM	12402	//ページから
+//#define HIDC_PP_EDIT_TO		12403	//ページまで
+//#define HIDC_PP_RADIO_ALL	12404	//すべて
+//#define HIDC_PP_RADIO_FROMTO	12405	//指定
 
 //印刷設定
 #define HIDC_PS_BUTTON_EDITSETTINGNAME	12500	//設定名変更
