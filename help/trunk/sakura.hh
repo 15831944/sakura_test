@@ -395,6 +395,10 @@
 #define HIDC_CHECK_DROPSOURCE					10213 //ドロップ元にする
 #define HIDC_CHECK_bNotOverWriteCRLF			10214 //上書きモード
 #define HIDC_CHECK_CONVERTEOLPASTE				10217 //改行コードを変換して貼り付ける // 2009.02.28 salarm
+#define HIDC_RADIO_CURDIR						10220 //カレントフォルダ
+#define HIDC_RADIO_MRUDIR						10221 //最近使ったフォルダ
+#define HIDC_RADIO_SELDIR						10222 //指定フォルダ
+#define HIDC_EDIT_FILEOPENDIR					10223 //指定フォルダパス
 #define HIDC_CHECK_EXCVLUSIVE_NO				10310 //ファイルの排他制御（排他制御しない）
 #define HIDC_CHECK_bCheckFileTimeStamp			10311 //更新の監視
 #define HIDC_CHECK_EXCVLUSIVE_WRITE				10312 //ファイルの排他制御（上書き禁止）
@@ -515,6 +519,7 @@
 #define HIDC_CHECK_DispTOOLBAR					11212 //ツールバー表示
 #define HIDC_CHECK_bScrollBarHorz				11213 //水平スクロールバー
 #define HIDC_CHECK_bMenuIcon					11214 //アイコン付きメニュー
+#define HIDC_CHECK_bMenuWChar					11215 //メニュー字化け対策
 #define HIDC_CHECK_SplitterWndVScroll			11216 //垂直スクロールの同期
 #define HIDC_CHECK_SplitterWndHScroll			11217 //水平スクロールの同期
 #define HIDC_CHECK_DispTabWnd					11218 //タブウインドウ表示	//@@@ 2003.05.31 MIK
@@ -536,6 +541,7 @@
 #define HIDC_CHECK_CloseOneWin					11274 //ウィンドウの閉じるボタンは現在のファイルのみ閉じる	// 2007.02.13 ryoji
 #define HIDC_CHECK_ChgWndByWheel				11275 //マウスホイールでタブ切替	// 2007.04.03 ryoji
 #define HIDC_CHECK_OpenNewWin					11276 //外部から起動するときは新しいウインドウ開く	// 2009.06.19
+#define HIDC_BUTTON_TABFONT						11277 //タブフォント
 #define HIDC_CHECK_WORDWRAP						11310 //英文ワードラップ
 #define HIDC_CHECK_INS_SPACE					11311 //スペースの挿入
 #define HIDC_CHECK_KINSOKUHEAD					11312 //行頭禁則	//@@@ 2002.04.08 MIK
@@ -611,6 +617,9 @@
 #define HIDC_EDIT_TYPEEXTHTMLHELP				11544 //外部HTMLヘルプファイル名	// 2006.08.06 ryoji
 #define HIDC_BUTTON_TYPEOPENEXTHTMLHELP			11545 //外部HTMLヘルプファイル参照	// 2006.08.06 ryoji
 #define HIDC_CHECK_TYPEHTMLHELPISSINGLE			11546 //ビューアを複数起動しない	// 2006.08.06 ryoji
+#define HIDC_COMBO_DEFAULT_CODETYPE				14300 //デフォルト文字コード
+#define HIDC_COMBO_DEFAULT_EOLTYPE				14302 //デフォルト改行コード	// 2011.01.24 ryoji
+#define HIDC_CHECK_DEFAULT_BOM					14303 //デフォルトBOM			// 2011.01.24 ryoji
 #define HIDC_BUTTON_REGEX_IMPORT	11600	//インポート	//@@@ 2001.11.17 add MIK
 #define HIDC_BUTTON_REGEX_EXPORT	11601	//エクスポート	//@@@ 2001.11.17 add MIK
 #define HIDC_BUTTON_REGEX_INS		11602	//挿入			//@@@ 2001.11.17 add MIK

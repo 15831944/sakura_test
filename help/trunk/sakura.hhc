@@ -202,6 +202,11 @@
 					<param name="ImageNumber" value="9">
 					</OBJECT>
 				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="新規ウィンドウを開く">
+					<param name="Local" value="_RESOURCE\HLP000339.html">
+					<param name="ImageNumber" value="9">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
 					<param name="Name" value="開く">
 					<param name="Local" value="_RESOURCE\HLP000015.html">
 					<param name="ImageNumber" value="9">
@@ -1239,6 +1244,11 @@
 							</OBJECT>
 					</UL>
 					<LI> <OBJECT type="text/sitemap">
+						<param name="Name" value="共通設定『ツールバー』プロパティ">
+						<param name="Local" value="_RESOURCE\HLP000085.html">
+						<param name="ImageNumber" value="9">
+						</OBJECT>
+					<LI> <OBJECT type="text/sitemap">
 						<param name="Name" value="共通設定 『タブバー』プロパティ">
 						<param name="Local" value="_RESOURCE\HLP000150.html">
 						<param name="ImageNumber" value="9">
@@ -1251,6 +1261,11 @@
 					<LI> <OBJECT type="text/sitemap">
 						<param name="Name" value="共通設定『ファイル』プロパティ">
 						<param name="Local" value="_RESOURCE\HLP000083.html">
+						<param name="ImageNumber" value="9">
+						</OBJECT>
+					<LI> <OBJECT type="text/sitemap">
+						<param name="Name" value="共通設定『ファイル名表示』プロパティ">
+						<param name="Local" value="_RESOURCE\HLP000277.html">
 						<param name="ImageNumber" value="9">
 						</OBJECT>
 					<LI> <OBJECT type="text/sitemap">
@@ -1279,11 +1294,6 @@
 						<param name="ImageNumber" value="9">
 						</OBJECT>
 					<LI> <OBJECT type="text/sitemap">
-						<param name="Name" value="共通設定『ツールバー』プロパティ">
-						<param name="Local" value="_RESOURCE\HLP000085.html">
-						<param name="ImageNumber" value="9">
-						</OBJECT>
-					<LI> <OBJECT type="text/sitemap">
 						<param name="Name" value="共通設定『強調キーワード』プロパティ">
 						<param name="Local" value="_RESOURCE\HLP000086.html">
 						<param name="ImageNumber" value="9">
@@ -1296,11 +1306,6 @@
 					<LI> <OBJECT type="text/sitemap">
 						<param name="Name" value="共通設定『マクロ』プロパティ">
 						<param name="Local" value="_RESOURCE\HLP000201.html">
-						<param name="ImageNumber" value="9">
-						</OBJECT>
-					<LI> <OBJECT type="text/sitemap">
-						<param name="Name" value="共通設定『ファイル名表示』プロパティ">
-						<param name="Local" value="_RESOURCE\HLP000277.html">
 						<param name="ImageNumber" value="9">
 						</OBJECT>
 				</UL>
