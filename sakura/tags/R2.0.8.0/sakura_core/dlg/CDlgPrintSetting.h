@@ -1,0 +1,75 @@
+/*!	@file
+	@brief 印刷設定ダイアログ
+
+	@author Norio Nakatani
+*/
+/*
+	Copyright (C) 1998-2001, Norio Nakatani
+	Copyright (C) 2002, YAZAKI
+
+	This source code is designed for sakura editor.
+	Please contact the copyright holder to use this code for other purpose.
+*/
+
+class CDlgPrintSetting;
+
+#ifndef _CDLGPRINTSETTING_H_
+#define _CDLGPRINTSETTING_H_
+
+#include "dlg/CDialog.h"
+#include "config/maxdata.h" // MAX_PRINTSETTINGARR
+#include "print/CPrint.h" //PRINTSETTING
+
+/*!	印刷設定ダイアログ
+
+	@date 2002.2.17 YAZAKI CShareDataのインスタンスは、CProcessにひとつあるのみ。
+*/
+class CDlgPrintSetting : public CDialog
+{
+public:
+	/*
+	||  Constructors
+	*/
+
+	/*
+	||  Attributes & Operations
+	*/
+	int DoModal( HINSTANCE, HWND, int*, PRINTSETTING*, int );	/* モーダルダイアログの表示 */
+
+private:
+	int				m_nCurrentPrintSetting;
+	PRINTSETTING	m_PrintSettingArr[MAX_PRINTSETTINGARR];
+	int				m_nLineNumberColmns;					// 行番号表示する場合の桁数
+	bool			m_bPrintableLinesAndColumnInvalid;
+
+protected:
+	/*
+	||  実装ヘルパ関数
+	*/
+	void SetData( void );	/* ダイアログデータの設定 */
+	int GetData( void );	/* ダイアログデータの取得 */
+	BOOL OnInitDialog( HWND, WPARAM, LPARAM );
+	BOOL OnDestroy( void );
+	BOOL OnNotify( WPARAM,  LPARAM );
+	BOOL OnCbnSelChange( HWND, int );
+	BOOL OnBnClicked( int );
+	BOOL OnStnClicked( int );
+	BOOL OnEnChange( HWND hwndCtl, int wID );
+	BOOL OnEnKillFocus( HWND hwndCtl, int wID );
+	LPVOID GetHelpIdTable(void);	//@@@ 2002.01.18 add
+
+	void OnChangeSettingType( BOOL );	/* 設定のタイプが変わった */
+	void OnSpin( int , BOOL );	/* スピンコントロールの処理 */
+	int DataCheckAndCorrect( int , int );	/* 入力値(数値)のエラーチェックをして正しい値を返す */
+	BOOL CalcPrintableLineAndColumn();	/* 行数と桁数を計算 */
+	void UpdatePrintableLineAndColumn();	/* 行数と桁数の計算要求 */
+
+};
+
+
+
+///////////////////////////////////////////////////////////////////////
+#endif /* _CDLGPRINTSETTING_H_ */
+
+
+
